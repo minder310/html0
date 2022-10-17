@@ -1,0 +1,102 @@
+/* 宣告全域變數 */
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: '標楷體';
+}
+
+/* 宣告給body的變數。 */
+.main {
+    display: flex;
+    width: 1024px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+body>*:not(.aside, .section),
+aside>*,
+section>* {
+    border: 1px solid lightgray;
+}
+
+/* 宣告給hearder的變數。 */
+.top {
+    width: 1000px;
+    height: 65px;
+}
+
+/* 宣告給左邊的寬高 */
+.aside {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 215px;
+    height: calc(768px - 20px - 65px);
+}
+
+.menu {
+    flex-basis: calc(100% - 25px);
+}
+.menu-header{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    color: #ff00ff;
+}
+.updata {
+    flex-basis: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+.menu-a{
+    background-image: url(./images/menu1.png);
+    color: #000000;
+    font-size: 16px;
+    display: block;
+    padding: auto;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    /* 修正文字置中。 */
+    padding-top: 10px;
+    /* 修正與上下間距 */
+    margin: 10px auto;
+}
+.menu-a:hover{
+    background-image: url(./images/menu2.png);
+    
+}
+
+/* 宣告給右邊顯示項目 */
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(1000px - 215px);
+
+}
+
+.marquee {
+    flex-basis: 29px;
+}
+marquee{
+    font-size: 24px;
+    color: #0000ff;
+}
+
+.content {
+    flex-basis: calc(100% - 29px);
+}
+
+/* 宣告給footer */
+.footer {
+    width: 1000px;
+    height: 20px;
+}
